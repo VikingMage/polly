@@ -2,4 +2,4 @@
 
 :: START POWERSHELL SCRIPT: has to be in same directory as this batch file
 
-   powershell -file .\polly.ps1 -run "auto" 
+   powershell -file .\polly.bat -run "auto" 
