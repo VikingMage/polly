@@ -1,4 +1,11 @@
-﻿# polly-01Oa-MS.ps1 -- PS5/PS6/PS7
+<# ::  polly-01Oa-MS.ps1 -- PS5+
+@echo off
+powershell -c "iex ((Get-Content '%~f0') -join [Environment]::Newline); iex 'main %*'"
+goto :eof
+
+# SYNOPSIS
+  This script embeds the Polly PowerShell in a BAT file and allows command-line arguments.
+#>
 
 # GET COMMAND-LINE PARAMETERS -----------------
   param ([string]$ini, [string]$run); 
